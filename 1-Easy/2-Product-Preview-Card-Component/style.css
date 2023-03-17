@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color:hsl(30, 38%, 92%);
+    min-height: 100vh;
+}
+.card-price{
+    font-family: 'Fraunces', serif;
+}
+#card-image > img{
+    max-width: 600px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px;
+}
+#card-title {
+    color:hsl(212, 21%, 14%);
+    font-family: "Fraunces";
+    font-size:2rem;
+}
+#card-add-to-cart {
+    padding: 12px;
+    background: hsl(144,31%,20%);
+    border-radius: 12px;
+    color:white;
+    cursor: pointer;
+}
+#card-new-price {
+    font-size: 2rem;
+    color:hsl(158, 36%, 37%);
+}
+#card-preview,#card-description {
+    color:hsl(228, 12%, 48%)
+}
+#card{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#card-add-to-cart img {
+    width: 20px;
+}
+#card-container{
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    border-radius: 15px;
+    background: white;
+}
+#card-title {
+    display: block;
+}
+
+#card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+padding: 20px;    
+margin: 15px;
+}
+#card-prices {
+    display: flex;
+    align-items:center;
+}
+#card-old-price{
+    margin-left: 12px;
+    text-decoration: line-through;
+    color:darkgray;
+}
+#card-add-to-cart {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+#card-add-to-cart img {
+    margin-right: 12px;
+}
