@@ -1,0 +1,139 @@
+#thank-image {
+    width: 200px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color:var(--white)
+}
+span.text{
+    color:var(--orange);
+    padding: 12px;
+    background: var(--rates);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    border-radius: 24px;
+}
+.attribution {
+    color:white;
+}
+#app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 97vh;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-size:15px;
+    font-family: 'Overpass', sans-serif;
+
+}
+button{
+        transition: .3s ease-in;
+}
+:root{
+--white: hsl(0, 0%, 100%);
+--lightgrey: hsl(217, 12%, 63%);
+--mediumgrey: hsl(216, 12%, 54%);
+--rates:hsl(217,11%,24%);
+--darkblue: hsl(213, 19%, 18%);
+--verydarkblue: hsl(216, 12%, 8%);
+--orange: hsl(25, 97%, 53%);
+}
+#rating-submit {
+    text-transform: uppercase;
+    border:none;
+    letter-spacing: 1px;
+}
+#rating-submit:hover{
+    color:var(--orange);
+    background-color: var(--white)
+}
+.rate{
+    color:var(--lightgrey);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height:50px;
+    background-color: var(--rates);
+    cursor: pointer;
+    user-select: none;
+    transition: .3s;
+}
+/*selected*/
+.enabled{
+    color:var(--white);
+    background: var(--lightgrey);
+}
+/*same*/
+.rate:hover{
+    color:var(--white);
+    background: var(--orange);
+}
+#rating-submit {
+    width: 90%;
+    padding: 12px;
+    border-radius: 24px;
+    background: var(--orange);
+    color:var(--white);
+    cursor: pointer;
+}
+#rating-title {
+    color:var(--white);
+}
+#rating-p {
+    color:var(--lightgrey)
+}
+#rates{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    background:var(--darkblue);
+    border-radius:24px;
+    display: flex;
+    flex-direction: column;
+    width: 28.5%;
+    height: 70%;
+    justify-content: space-around;
+    padding: 25px;
+}
+p.text {
+    text-align: center;
+}
+#rating-image {
+    width:15px;
+}
+#star{
+    padding: 12px;
+    background: var(--rates);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.text{
+    color:var(--lightgrey);
+}
