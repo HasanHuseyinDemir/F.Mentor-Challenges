@@ -137,3 +137,6 @@ p.text {
 .text{
     color:var(--lightgrey);
 }
+.not-rated{
+    cursor:not-allowed!important;
+}
