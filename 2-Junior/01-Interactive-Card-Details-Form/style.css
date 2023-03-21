@@ -1,0 +1,83 @@
+#logo {
+    width: 20%;
+}
+#card-front-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+#cvc {
+    padding-right: 12px;
+}
+:root{
+    --card-width:400px;
+    --card-h-ratio:1;
+    --card-w-ratio:2;
+    --card-back-color:hsl(270, 3%, 87%);
+    --card-back-band:rgb(45,45,45);
+    --card-back-cvc-bgcolor:hsl(240,4%,73%);
+}
+.card-iban {
+    font-size:1.5rem;
+   /* text-shadow: 1px 1px 1px rgba(0,0,0,0.23);*/
+    letter-spacing: 1.5px;
+}
+#card-holder {
+    text-transform: uppercase;
+}
+#card-expiration,#card-holder{
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Grotesk', sans-serif;;
+}
+
+.card{
+    background: var(--card-back-color);
+    width: calc(var(--card-width)/var(--card-h-ratio));
+    height: calc(var(--card-width)/var(--card-w-ratio));
+    border-radius: 8px;
+    z-index: 100;
+    color:white;
+    box-shadow: 5px 5px 20px rgba(128,128,128,0.22);
+
+}
+
+#card-front{
+    background-image: url("./images/bg-card-front.png");
+    background-size:cover;
+    display:grid;
+    grid-auto-rows:2.5fr 1fr 1fr;
+    padding: 24px;
+}
+
+#card-back{
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1.5fr 3fr 1fr 2fr 5fr; 
+    background-image: linear-gradient(135deg,rgb(238,238,238),var(--card-back-color))
+}
+#card-cvc {
+    width: 80%;
+    background-color: var(--card-back-cvc-bgcolor);
+    height: 100%;
+    border-radius: 4px;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size:12px;
+    letter-spacing: 1px;
+}
+#card-band{
+    background: var(--card-back-band);
+    width: 100%;
+    height: 100%;
+}
