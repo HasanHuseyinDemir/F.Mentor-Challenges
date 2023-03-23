@@ -1,4 +1,4 @@
-import { store } from "../store.js"
+import { store } from "../../store.js"
 
 export const BackCard=()=>{
     return H( store, html`

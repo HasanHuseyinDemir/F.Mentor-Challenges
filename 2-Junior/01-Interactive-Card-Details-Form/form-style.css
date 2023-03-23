@@ -1,0 +1,30 @@
+#form{
+    width: 30vw;
+    /*height: 40vh;*/
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+#main-right {
+    display: flex;
+    height: 100vh;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+        font-size:15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.my-input{
+    width: 25%;
+}
+#expiration{
+    width: 50%;
+}
+.form-field{
+    flex-direction: column;
+    width: 100%;
+}

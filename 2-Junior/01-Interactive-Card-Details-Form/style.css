@@ -36,7 +36,8 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Space Grotesk', sans-serif;;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
 }
 
 .card{
@@ -80,4 +81,16 @@ body{
     background: var(--card-back-band);
     width: 100%;
     height: 100%;
+}
+input{
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 6px;
+    font-weight: 500;
+    font-size:16px;
+    border-radius: 6px;
+    border:solid 1px;
+    border-color:rgb(178,178,178);
+}
+.card-iban , #cvc{
+    text-shadow: 2px 2px 2px rgba(54,54,54,0.42);
 }
